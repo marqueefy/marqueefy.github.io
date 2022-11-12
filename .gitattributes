@@ -1,0 +1,11 @@
+# Enforce Unix newlines
+* text=auto eol=lf
+
+*.jpg binary
+*.png binary
+
+# Don't diff or textually merge source maps
+*.map binary
+
+marqueefy.css linguist-vendored=false
+marqueefy.js linguist-vendored=false

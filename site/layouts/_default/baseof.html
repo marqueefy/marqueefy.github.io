@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  {{ partial "header" . }}
+</head>
+<body>
+  {{ partial "navbar" . }}
+
+  <div class="container pt-4" data-bs-spy="scroll" data-bs-target="#contents" data-bs-root-margin="0px 0px -75%">
+    {{ block "main" . }}
+    {{ end }}
+  </div>
+  {{ partial "footer" . }}
+  {{ partial "scripts" . }}
+</body>
+</html>

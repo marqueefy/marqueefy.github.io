@@ -1,0 +1,54 @@
+baseURL: 'http://marqueefy.github.io/'
+languageCode: 'en'
+title: 'Marqueefy'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe:           true
+  highlight:
+    noClasses:          false
+  tableOfContents:
+    startLevel:         2
+    endLevel:           6
+
+buildDrafts:            true
+buildFuture:            true
+
+enableRobotsTXT:        true
+metaDataFormat:         "yaml"
+disableKinds:           ["404", "taxonomy", "term", "RSS", "section"]
+
+publishDir: "_site"
+
+module:
+  mounts:
+  - source: dist
+    target: static/1.0/dist
+  - source: site/content
+    target: content
+  - source: site/static
+    target: static
+  - source: site/layouts
+    target: layouts
+  - source: site/data
+    target: data
+  - source: site/assets
+    target: assets
+
+related:
+  includeNewer: false
+  indices:
+    - name: keywords
+      weight: 100
+    - name: date
+      weight: 10
+  threshold: 80
+  toLower: false
+
+params:
+  description:          "Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content."
+  authors:              "Neeraj Kumar Das"
+
+  current_version:      "1.0.0"
+  docs_version:         "1.0"

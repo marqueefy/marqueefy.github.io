@@ -1,0 +1,23 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.0.0/dist/css/materialstyle.min.css" integrity="sha256-5631aPp4mCcq5k5KYTEMD1gbJKpTNB/UCvQMj1MVbUk=" crossorigin="anonymous">
+
+{{ if eq hugo.Environment "production" -}}
+<link href="/{{ .Site.Params.docs_version }}/dist/css/marqueefy.min.css" rel="stylesheet">
+{{- else -}}
+<link href="/{{ .Site.Params.docs_version }}/dist/css/marqueefy.css" rel="stylesheet">
+{{- end }}
+
+{{- $targetDocsCssPath := path.Join "/" .Site.Params.docs_version "assets/css/styles.css" -}}
+{{- $sassOptions := dict "targetPath" $targetDocsCssPath "outputStyle" "expanded" "precision" 6 -}}
+{{- $postcssOptions := dict "use" "autoprefixer" "noMap" true -}}
+
+{{ if eq hugo.Environment "production" -}}
+  {{- $sassOptions = merge $sassOptions (dict "outputStyle" "compressed") -}}
+{{- end -}}
+
+{{- $style := resources.Get "1.0/scss/site.scss" | toCSS $sassOptions | postCSS $postcssOptions }}
+
+<link href="{{ $style.Permalink | relURL }}" rel="stylesheet">

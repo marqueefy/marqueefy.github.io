@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="component-page">
+
+  <div class="component-showcase">
+    {{ .Content }}
+  </div>
+
+  <div class="component-map">
+    <div class="row">
+      <div class="col">
+        <div class="adspace bg-gray-100">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky-md-top" style="top: 5rem;">
+
+      <div class="row">
+        <div class="col">
+          <div class="ms-toc mt-2 mb-2">
+            <label class="mb-2">CONTENTS</label>
+            <nav id="contents">
+              <ul class="nav nav-pills flex-column">
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+{{ end }}
