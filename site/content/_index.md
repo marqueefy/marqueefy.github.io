@@ -96,7 +96,7 @@ title: Marqueefy
   
   ### Download
   <a class="btn btn-indigo btn-lg rounded-pill" 
-     href="https://github.com/marqueefy/marqueefy/releases/download/v1.0.0/marqueefy-1.0.0-dist.zip" download>
+     href="https://github.com/marqueefy/marqueefy.github.io/releases/download/v1.0.0/marqueefy-1.0.0-dist.zip" download>
     Download v1.0.0
   </a>
   
