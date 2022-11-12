@@ -34,6 +34,7 @@
   "style": "dist/css/marqueefy.css",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
+    "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "css": "npm-run-all css-compile css-prefix css-minify",
     "css-compile": "sass --load-path=node_modules/ --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
     "css-lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint-*",
@@ -82,6 +83,7 @@
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-replace": "^4.0.0",
     "autoprefixer": "^10.4.12",
+    "bundlewatch": "^0.3.3",
     "clean-css-cli": "^5.6.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.24.0",

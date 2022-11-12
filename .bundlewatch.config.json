@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "./dist/css/marqueefy.css",
+      "maxSize": "743 B"
+    },
+    {
+      "path": "./dist/css/marqueefy.min.css",
+      "maxSize": "705 B"
+    },
+    {
+      "path": "./dist/js/marqueefy.esm.js",
+      "maxSize": "2.32 kB"
+    },
+    {
+      "path": "./dist/js/marqueefy.esm.min.js",
+      "maxSize": "1.65 kB"
+    },
+    {
+      "path": "./dist/js/marqueefy.js",
+      "maxSize": "2.5 kB"
+    },
+    {
+      "path": "./dist/js/marqueefy.min.js",
+      "maxSize": "1.65 kB"
+    }
+  ],
+  "ci": {
+    "trackBranches": [
+      "main"
+    ]
+  }
+}
