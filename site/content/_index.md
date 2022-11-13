@@ -32,19 +32,19 @@ title: Marqueefy
   Styles
 
   ```html
-  <!-- Material Style CSS -->
+  <!-- Marqueefy CSS -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.0/dist/css/marqueefy.min.css" 
-        integrity="sha384-Lnu1KIAOFhyJWM4oUSzwxyStv1OD4B2ZiTZts6q+0kEuYbz7owWW1K4zyMFI8Kb5" 
+        integrity="sha384-wADgvhAqbORDLWCl6LHRmwaldDxcsCZJ9EfC4tyLmlqRSrxK8SQSmUprPJYdtCZb" 
         crossorigin="anonymous">
   ```
 
   Scripts
 
   ```html  
-  <!-- Material Style JS -->
+  <!-- Marqueefy JS -->
   <script src="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.0/dist/js/marqueefy.min.js" 
-          integrity="sha384-Q5hpQ5oxjAOFZ4FCVYZ679rhwdssrUFlQuc38BExagMP+344TVLBb/3zKGhMBSES" 
+          integrity="sha384-i4dhK6R5/Y66fUlSpw7ETADsUxKrFjJ2KA7KVWCTjIcpff5ltHKGyTLQhcJiG/Ki" 
           crossorigin="anonymous"></script>
   ```
 
@@ -54,19 +54,19 @@ title: Marqueefy
   Styles
   
   ```html
-  <!-- Material Style CSS -->
+  <!-- Marqueefy CSS -->
   <link rel="stylesheet"
         href="https://unpkg.com/@marqueefy/marqueefy@1.0.0/dist/css/marqueefy.min.css" 
-        integrity="sha384-Lnu1KIAOFhyJWM4oUSzwxyStv1OD4B2ZiTZts6q+0kEuYbz7owWW1K4zyMFI8Kb5" 
+        integrity="sha384-wADgvhAqbORDLWCl6LHRmwaldDxcsCZJ9EfC4tyLmlqRSrxK8SQSmUprPJYdtCZb" 
         crossorigin="anonymous">
   ```
 
   Scripts
 
   ```html  
-  <!-- Material Style JS -->
+  <!-- Marqueefy JS -->
   <script src="https://unpkg.com/@marqueefy/marqueefy@1.0.0/dist/js/marqueefy.min.js" 
-          integrity="sha384-Q5hpQ5oxjAOFZ4FCVYZ679rhwdssrUFlQuc38BExagMP+344TVLBb/3zKGhMBSES" 
+          integrity="sha384-i4dhK6R5/Y66fUlSpw7ETADsUxKrFjJ2KA7KVWCTjIcpff5ltHKGyTLQhcJiG/Ki" 
           crossorigin="anonymous"></script>
   ```
 
