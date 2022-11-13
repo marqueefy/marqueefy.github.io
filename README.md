@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://marqueefy.github.io/">
-    <img src="https://marqueefy.github.io/assets/images/marqueefy-logo.svg" alt="Marqueefy logo" width="100" height="100">
+    <img src="https://marqueefy.github.io/assets/images/MarqueefyLogo.svg" alt="Marqueefy logo" width="100" height="100">
   </a>
 </p>
 
