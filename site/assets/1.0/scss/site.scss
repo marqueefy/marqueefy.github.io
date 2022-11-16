@@ -26,7 +26,7 @@
   }
 
   &[data-color="orange"] {
-    --theme-primary: var(--bs-orange-rgb);
+    --theme-primary: 202,101,16;
   }
 }
 
@@ -51,7 +51,7 @@
   }
 
   &[data-color="indigo"] {
-    --theme-primary: var(--bs-indigo-rgb);
+    --theme-primary: 163, 112, 247;
   }
 
   &[data-color="orange"] {
