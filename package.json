@@ -1,6 +1,6 @@
 {
   "name": "@marqueefy/marqueefy",
-  "description": "Marqueefy is a custom Marquee component.",
+  "description": "Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.",
   "version": "1.0.0",
   "config": {
     "version_short": "1.0"
@@ -97,15 +97,12 @@
     "hammer-simulator": "0.0.1",
     "hugo-bin": "^0.92.2",
     "ip": "^2.0.0",
-    "jquery": "^3.6.1",
     "lockfile-lint": "^4.9.5",
     "nodemon": "^2.0.20",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.17",
     "postcss-cli": "^10.0.0",
     "rollup": "^2.79.1",
-    "rollup-plugin-istanbul": "^3.0.0",
-    "rtlcss": "^4.0.0",
     "sass": "^1.55.0",
     "shelljs": "^0.8.5",
     "stylelint": "^14.13.0",
