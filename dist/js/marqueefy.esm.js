@@ -1,5 +1,5 @@
 /*!
-  * Marqueefy v1.0.0 (https://marqueefy.github.io/)
+  * Marqueefy v1.0.1 (https://marqueefy.github.io/)
   * Copyright 2022 Neeraj Kumar Das (https://github.com/nkdas91)
   * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/master/LICENSE)  
   */
@@ -202,7 +202,7 @@ class Config {
  * Constants
  */
 
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 /**
  * Class definition
@@ -251,7 +251,7 @@ class BaseComponent extends Config {
 
 /**
  * --------------------------------------------------------------------------
- * Marqueefy (v1.0.0): marqueefy.js
+ * Marqueefy (v1.0.1): marqueefy.js
  * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -287,6 +287,8 @@ class Marqueefy extends BaseComponent {
     const {
       speed
     } = this._config;
+    this._element.setAttribute('data-mq-direction', direction);
+    this._element.setAttribute('data-mq-speed', speed);
     const content = this._element.querySelector('.content');
     let distance = content.getBoundingClientRect().width;
     if (direction === 'top' || direction === 'bottom') {
