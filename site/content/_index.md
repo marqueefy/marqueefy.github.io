@@ -244,8 +244,8 @@ title: Marqueefy
   {{< example codeId="code8" class="d-flex justify-content-center align-items-center">}}
 <style>
   #example1 {
-    --mq-bg: #efadce; 
-    --mq-hover-bg: #e685b5;
+    --mq-bg: #ffe69c; 
+    --mq-hover-bg: #ffda6a;
   }
 </style>
 
@@ -260,8 +260,8 @@ title: Marqueefy
   {{< example codeId="code9" class="d-flex justify-content-center align-items-center">}}
 <style>
   #example2 {
-    --mq-bg: #9eeaf9; 
-    --mq-hover-bg: #6edff6; 
+    --mq-bg: #a6e9d5;
+    --mq-hover-bg: #79dfc1;
     --mq-border-radius: 3rem;
   }
 </style>
