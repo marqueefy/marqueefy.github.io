@@ -265,8 +265,10 @@
       s.querySelector('rect').setAttribute('fill', `url(#s${i++})`)
     })
 
-    document.querySelector('#specs-button').addEventListener('click', () => {
+    document.querySelector('#specs-button').addEventListener('click', (e) => {
+      e.preventDefault()
       showTab('specs-tab')
+      window.location.href = '/#specs-css-custom-properties'
     })
   })
 })()
