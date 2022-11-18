@@ -215,7 +215,7 @@ title: Marqueefy
   
   #### Configuration
   Direction and Speed can also be set using Javascript. Simply pass the configuration object ```{direction: 'left', speed: 100}``` as 
-  the second argument.
+  the second argument. Configurations set via Javascript takes priority over HTML attributes.
   
   ```javascript
   const marqueefyList = Array.prototype.slice.call(document.querySelectorAll('.marqueefy'))
@@ -233,7 +233,79 @@ title: Marqueefy
  ```javascript
   const marqueefyInstance = marqueefy.Marqueefy.getInstance('#hidden-marquee')
   marqueefyInstance.refresh()
-  ```
+```
+
+  {{< squiggle >}}
+    
+  ### Customization
+  
+  Customize Marqueefy by changing <a id="specs-button" href="/#specs-css-custom-properties">CSS custom properties</a>
+  #### Background color
+  {{< example codeId="code8" class="d-flex justify-content-center align-items-center">}}
+<style>
+  #example1 {
+    --mq-bg: #efadce; 
+    --mq-hover-bg: #e685b5;
+  }
+</style>
+
+<div class="marqueefy" id="example1" tabindex="0">
+    <div class="content">
+        Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
+    </div>
+</div>
+  {{< /example >}}
+  
+  #### Border radius
+  {{< example codeId="code9" class="d-flex justify-content-center align-items-center">}}
+<style>
+  #example2 {
+    --mq-bg: #9eeaf9; 
+    --mq-hover-bg: #6edff6; 
+    --mq-border-radius: 3rem;
+  }
+</style>
+
+<div class="marqueefy" id="example2" tabindex="0">
+    <div class="content">
+        Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
+    </div>
+</div>
+  {{< /example >}}
+  
+  #### Border
+  {{< example codeId="code10" class="d-flex justify-content-center align-items-center">}}
+<style>
+  #example3 {
+    --mq-border-width: 4px; 
+    --mq-border-style: dashed; 
+    --mq-border-color: #6f42c1;
+  }
+</style>
+
+<div class="marqueefy" id="example3" tabindex="0">
+    <div class="content">
+        Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
+    </div>
+</div>
+  {{< /example >}}
+  
+  #### Font
+  {{< example codeId="code11" class="d-flex justify-content-center align-items-center">}}
+<style>
+  #example4 {
+    --mq-font-family: "Kaushan Script", cursive; 
+    --mq-font-size: 1.5rem; 
+  }
+</style>
+
+<div class="marqueefy" id="example4" tabindex="0">
+    <div class="content">
+        Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
+    </div>
+</div>
+  {{< /example >}}
+
 
   </div>
   <div id="specs-tab-content" class="tab-pane fade" id="specs-tab-content" role="tabpanel" aria-labelledby="specs-tab" tabindex="0" data-content="specs">

@@ -65,7 +65,12 @@
          <li class="nav-item"><a class="nav-link" href="#options-speed">Speed</a></li>
          <li class="nav-item my-2">Javascript</li>
          <li class="nav-item"><a class="nav-link" href="#options-configuration">Configuration</a></li>
-         <li class="nav-item"><a class="nav-link" href="#options-non-visible-elements">Non-visible elements</a></li>`
+         <li class="nav-item"><a class="nav-link" href="#options-non-visible-elements">Non-visible elements</a></li>
+         <li class="nav-item my-2">Customization</li>
+         <li class="nav-item"><a class="nav-link" href="#options-background-color">Background color</a></li>
+         <li class="nav-item"><a class="nav-link" href="#options-border-radius">Border radius</a></li>
+         <li class="nav-item"><a class="nav-link" href="#options-border">Border</a></li>
+         <li class="nav-item"><a class="nav-link" href="#options-font">Font</a></li>`
 
         root.setAttribute('data-color', 'indigo')
 
@@ -259,5 +264,10 @@
       s.querySelector('pattern').setAttribute('id', `s${i}`)
       s.querySelector('rect').setAttribute('fill', `url(#s${i++})`)
     })
+
+    document.querySelector('#specs-button').addEventListener('click', () => {
+      showTab('specs-tab')
+    })
+
   })
 })()
