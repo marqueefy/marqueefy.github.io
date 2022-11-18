@@ -50,5 +50,5 @@ params:
   description:          "Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content."
   authors:              "Neeraj Kumar Das"
 
-  current_version:      "1.0.1"
+  current_version:      "1.0.2"
   docs_version:         "1.0"

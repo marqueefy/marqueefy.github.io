@@ -13,7 +13,7 @@ import Config from './config'
  * Constants
  */
 
-const VERSION = '1.0.1'
+const VERSION = '1.0.2'
 
 /**
  * Class definition
