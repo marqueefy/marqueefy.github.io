@@ -34,7 +34,7 @@ title: Marqueefy
   ```html
   <!-- Marqueefy CSS -->
   <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.1/dist/css/marqueefy.min.css" 
+        href="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.2/dist/css/marqueefy.min.css" 
         integrity="sha384-wADgvhAqbORDLWCl6LHRmwaldDxcsCZJ9EfC4tyLmlqRSrxK8SQSmUprPJYdtCZb" 
         crossorigin="anonymous">
   ```
@@ -43,8 +43,8 @@ title: Marqueefy
 
   ```html  
   <!-- Marqueefy JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.1/dist/js/marqueefy.min.js" 
-          integrity="sha384-7bqg+mxCbIdbhx5DVAlx20Y7LW30povGLlrjjnfzFPPvjH3lEDIjwbFHx95pkdDc" 
+  <script src="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.2/dist/js/marqueefy.min.js" 
+          integrity="sha384-r7IY8FnyT2tNOICu/cgSjfxEfJucnMbjEW8R7VA3LkR+IAK/331d+7rd/q4l9pB8" 
           crossorigin="anonymous"></script>
   ```
 
@@ -56,7 +56,7 @@ title: Marqueefy
   ```html
   <!-- Marqueefy CSS -->
   <link rel="stylesheet"
-        href="https://unpkg.com/@marqueefy/marqueefy@1.0.1/dist/css/marqueefy.min.css" 
+        href="https://unpkg.com/@marqueefy/marqueefy@1.0.2/dist/css/marqueefy.min.css" 
         integrity="sha384-wADgvhAqbORDLWCl6LHRmwaldDxcsCZJ9EfC4tyLmlqRSrxK8SQSmUprPJYdtCZb" 
         crossorigin="anonymous">
   ```
@@ -65,8 +65,8 @@ title: Marqueefy
 
   ```html  
   <!-- Marqueefy JS -->
-  <script src="https://unpkg.com/@marqueefy/marqueefy@1.0.1/dist/js/marqueefy.min.js" 
-          integrity="sha384-7bqg+mxCbIdbhx5DVAlx20Y7LW30povGLlrjjnfzFPPvjH3lEDIjwbFHx95pkdDc" 
+  <script src="https://unpkg.com/@marqueefy/marqueefy@1.0.2/dist/js/marqueefy.min.js" 
+          integrity="sha384-r7IY8FnyT2tNOICu/cgSjfxEfJucnMbjEW8R7VA3LkR+IAK/331d+7rd/q4l9pB8" 
           crossorigin="anonymous"></script>
   ```
 
@@ -96,8 +96,8 @@ title: Marqueefy
   
   ### Download
   <a class="btn btn-indigo btn-lg rounded-pill" 
-     href="https://github.com/marqueefy/marqueefy.github.io/releases/download/v1.0.1/marqueefy-1.0.1-dist.zip" download>
-    Download v1.0.1
+     href="https://github.com/marqueefy/marqueefy.github.io/releases/download/v1.0.2/marqueefy-1.0.2-dist.zip" download>
+    Download v1.0.2
   </a>
   
   </div>
