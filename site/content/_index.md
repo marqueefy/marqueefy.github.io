@@ -44,7 +44,7 @@ title: Marqueefy
   ```html  
   <!-- Marqueefy JS -->
   <script src="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.1/dist/js/marqueefy.min.js" 
-          integrity="sha384-i4dhK6R5/Y66fUlSpw7ETADsUxKrFjJ2KA7KVWCTjIcpff5ltHKGyTLQhcJiG/Ki" 
+          integrity="sha384-/O4LVI20Uw9UmWUWKRW+mSsQzFiVwboOnrC9eZWDrhFfFSqOPUbgMV+O3Mmk8mNR" 
           crossorigin="anonymous"></script>
   ```
 
@@ -66,7 +66,7 @@ title: Marqueefy
   ```html  
   <!-- Marqueefy JS -->
   <script src="https://unpkg.com/@marqueefy/marqueefy@1.0.1/dist/js/marqueefy.min.js" 
-          integrity="sha384-i4dhK6R5/Y66fUlSpw7ETADsUxKrFjJ2KA7KVWCTjIcpff5ltHKGyTLQhcJiG/Ki" 
+          integrity="sha384-/O4LVI20Uw9UmWUWKRW+mSsQzFiVwboOnrC9eZWDrhFfFSqOPUbgMV+O3Mmk8mNR" 
           crossorigin="anonymous"></script>
   ```
 
