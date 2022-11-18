@@ -44,6 +44,9 @@ class Marqueefy extends BaseComponent {
     const { direction } = this._config
     const { speed } = this._config
 
+    this._element.setAttribute('data-mq-direction', direction)
+    this._element.setAttribute('data-mq-speed', speed)
+
     const content = this._element.querySelector('.content')
     let distance = content.getBoundingClientRect().width
 
