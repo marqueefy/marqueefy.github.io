@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Marqueefy (v1.0.0): marqueefy.js
+ * Marqueefy (v1.0.1): marqueefy.js
  * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */

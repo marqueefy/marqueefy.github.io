@@ -34,7 +34,7 @@ title: Marqueefy
   ```html
   <!-- Marqueefy CSS -->
   <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.0/dist/css/marqueefy.min.css" 
+        href="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.1/dist/css/marqueefy.min.css" 
         integrity="sha384-wADgvhAqbORDLWCl6LHRmwaldDxcsCZJ9EfC4tyLmlqRSrxK8SQSmUprPJYdtCZb" 
         crossorigin="anonymous">
   ```
@@ -43,7 +43,7 @@ title: Marqueefy
 
   ```html  
   <!-- Marqueefy JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.0/dist/js/marqueefy.min.js" 
+  <script src="https://cdn.jsdelivr.net/npm/@marqueefy/marqueefy@1.0.1/dist/js/marqueefy.min.js" 
           integrity="sha384-i4dhK6R5/Y66fUlSpw7ETADsUxKrFjJ2KA7KVWCTjIcpff5ltHKGyTLQhcJiG/Ki" 
           crossorigin="anonymous"></script>
   ```
@@ -56,7 +56,7 @@ title: Marqueefy
   ```html
   <!-- Marqueefy CSS -->
   <link rel="stylesheet"
-        href="https://unpkg.com/@marqueefy/marqueefy@1.0.0/dist/css/marqueefy.min.css" 
+        href="https://unpkg.com/@marqueefy/marqueefy@1.0.1/dist/css/marqueefy.min.css" 
         integrity="sha384-wADgvhAqbORDLWCl6LHRmwaldDxcsCZJ9EfC4tyLmlqRSrxK8SQSmUprPJYdtCZb" 
         crossorigin="anonymous">
   ```
@@ -65,7 +65,7 @@ title: Marqueefy
 
   ```html  
   <!-- Marqueefy JS -->
-  <script src="https://unpkg.com/@marqueefy/marqueefy@1.0.0/dist/js/marqueefy.min.js" 
+  <script src="https://unpkg.com/@marqueefy/marqueefy@1.0.1/dist/js/marqueefy.min.js" 
           integrity="sha384-i4dhK6R5/Y66fUlSpw7ETADsUxKrFjJ2KA7KVWCTjIcpff5ltHKGyTLQhcJiG/Ki" 
           crossorigin="anonymous"></script>
   ```
@@ -96,8 +96,8 @@ title: Marqueefy
   
   ### Download
   <a class="btn btn-indigo btn-lg rounded-pill" 
-     href="https://github.com/marqueefy/marqueefy.github.io/releases/download/v1.0.0/marqueefy-1.0.0-dist.zip" download>
-    Download v1.0.0
+     href="https://github.com/marqueefy/marqueefy.github.io/releases/download/v1.0.1/marqueefy-1.0.1-dist.zip" download>
+    Download v1.0.1
   </a>
   
   </div>

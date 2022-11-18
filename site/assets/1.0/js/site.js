@@ -268,6 +268,5 @@
     document.querySelector('#specs-button').addEventListener('click', () => {
       showTab('specs-tab')
     })
-
   })
 })()

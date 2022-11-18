@@ -1,7 +1,7 @@
 {
   "name": "@marqueefy/marqueefy",
   "description": "Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "config": {
     "version_short": "1.0"
   },
