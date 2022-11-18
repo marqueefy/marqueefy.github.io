@@ -88,6 +88,11 @@
   color: var(--theme-color);
 }
 
+.mx-container {
+  margin-right: calc(1.5rem * .5);
+  margin-left: calc(1.5rem * .5);
+}
+
 .nav-tabs {
   --bs-nav-tabs-border-color: var(--bs-gray);
 }
