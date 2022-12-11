@@ -26,6 +26,7 @@ class Marqueefy extends BaseComponent {
     this._element = element
     this._config = this._getConfig(config)
     this.refresh()
+    this._setListeners()
   }
 
   static get NAME() {
@@ -56,6 +57,12 @@ class Marqueefy extends BaseComponent {
     }
 
     this._element.style.setProperty('--mq-animation-duration', (distance / speed) + 's')
+  }
+
+  _setListeners() {
+    window.addEventListener('resize', () => this.refresh(), {
+      passive: true
+    })
   }
 }
 
