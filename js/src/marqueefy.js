@@ -25,7 +25,6 @@ class Marqueefy extends BaseComponent {
 
     this._element = element
     this._config = this._getConfig(config)
-    this.refresh()
     this._setListeners()
   }
 
@@ -60,6 +59,8 @@ class Marqueefy extends BaseComponent {
   }
 
   _setListeners() {
+    document.fonts.ready.then(() => this.refresh())
+
     window.addEventListener('resize', () => this.refresh(), {
       passive: true
     })
