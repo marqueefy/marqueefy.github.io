@@ -140,23 +140,46 @@ title: Marqueefy
   {{< /example >}}
       
   #### Icons
+  If the Marqueefy contains Web fonts or Icons, please make sure they are loaded and ready before initiallizing 
+  Marqueefy, because it uses its content's dimensions to determine the appropriate Speed.
+  
+  The following example uses <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>. It makes use of the 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fonts">Document.fonts property</a> to ensure 
+  the fonts are ready before initiallizing Marqueefy.
+  
   {{< example codeId="code2" class="d-flex justify-content-center align-items-center">}}
-<div class="marqueefy" tabindex="0">
-    <div class="content">
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M13.05 40q-1.3 0-2.15-.85-.85-.85-.85-2.15 0-.9.45-1.725.45-.825 1.3-1.175l8.6-3.4v-6.9q-3.3 4.05-6.7 6.1-3.4 2.05-7.7 2.05v-3q3.4 0 6.2-1.575Q15 25.8 17.25 22.95l2.9-3.25q.5-.6 1.175-1t1.475-.4h2.4q.8 0 1.5.4t1.2 1l2.9 3.25q2.4 2.75 5.1 4.375 2.7 1.625 6.1 1.625v3q-4.25 0-7.675-2.05T27.6 23.8v6.9l8.6 3.4q.85.35 1.3 1.175.45.825.45 1.725 0 1.3-.85 2.15-.85.85-2.15.85H19.8v-.55q0-1.3.8-2.1t2.1-.8h6.65q.4 0 .7-.3.3-.3.3-.7 0-.4-.3-.7-.3-.3-.7-.3H22.7q-2.2 0-3.5 1.35-1.3 1.35-1.3 3.55V40ZM24 15.3q-1.5 0-2.575-1.075-1.075-1.075-1.075-2.575 0-1.5 1.075-2.575Q22.5 8 24 8q1.5 0 2.575 1.075 1.075 1.075 1.075 2.575 0 1.5-1.075 2.575Q25.5 15.3 24 15.3Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m14.1 46 6.05-31q.25-1.2 1.15-1.85.9-.65 1.9-.65 1 0 1.875.45t1.425 1.3l1.95 3.2q.95 1.6 2.625 2.85T35 22.25V18.5h2V46h-2V25.3q-2.55-.55-4.8-1.95t-4-3.45l-1.45 7.25L29 31.2V46h-3V33.8l-5-4.75L17.3 46Zm.85-20.15-3.75-.7q-.5-.1-.875-.65t-.275-1.1l1.5-7.85q.25-1.45 1.45-2.225 1.2-.775 2.65-.525l1.8.35ZM26.5 10.3q-1.5 0-2.575-1.075Q22.85 8.15 22.85 6.65q0-1.5 1.075-2.575Q25 3 26.5 3q1.5 0 2.575 1.075Q30.15 5.15 30.15 6.65q0 1.5-1.075 2.575Q28 10.3 26.5 10.3Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24.5 44-1-19.9-7.45-2.6H2v-3h12.15L27.9 8.65l1.95 2.3-7.45 5.35 4.85 1.7 17-10L46 10.1 28.7 22.65 27.5 44ZM12 15.65q-1.5 0-2.575-1.075Q8.35 13.5 8.35 12q0-1.5 1.075-2.575Q10.5 8.35 12 8.35q1.5 0 2.575 1.075Q15.65 10.5 15.65 12q0 1.5-1.075 2.575Q13.5 15.65 12 15.65Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M4 46v-3h2q1.6 0 3.075-.525T12 40.55q1.45 1.4 2.925 1.925Q16.4 43 18 43q1.55 0 3.1-.55t2.9-1.9q1.45 1.4 2.925 1.925Q28.4 43 30 43q1.55 0 3.1-.55t2.9-1.9q1.35 1.35 2.9 1.9 1.55.55 3.1.55h2v3h-2q-1.45 0-2.975-.425Q37.5 45.15 36 44q-1.5 1.15-3.025 1.575Q31.45 46 30 46q-1.45 0-2.975-.425Q25.5 45.15 24 44q-1.5 1.15-3.025 1.575Q19.45 46 18 46q-1.45 0-2.975-.425Q13.5 45.15 12 44q-1.5 1.15-3.025 1.575Q7.45 46 6 46ZM17.1 8.2l10.9 2q.55.1 1.125.475t.975 1.075l1.75 3.1q1.3 2.3 3.575 3.75 2.275 1.45 5.075 1.55v3q-3.6-.15-6.625-2.125T29 15.9q-.2.15-.9.625t-1.575 1.05q-.875.575-1.725 1.15-.85.575-1.3.875.55.4 1.675 1.275 1.125.875 2.35 1.85 1.225.975 2.35 1.875l1.625 1.3v8.05q.85.6 1.6 1.175.75.575 1.55 1.225-1 .8-2.175 1.325Q31.3 38.2 30 38.2q-1.7 0-3.25-.9T24 34.95q-1.2 1.45-2.75 2.35-1.55.9-3.25.9h-.225q-.125 0-.225-.05-5.15-3.6-8.1-6.575Q6.5 28.6 6.5 26.55q0-1.25 1.05-1.65 1.05-.4 2.15-.4 1.45 0 3.475.5 2.025.5 4.575 1.4l-1.1-6.85q-.2-1.15.1-2.1.3-.95 1.15-1.5l5.3-3.55q-.35-.05-1.1-.2-.75-.15-1.6-.3-.85-.15-1.6-.325-.75-.175-1.1-.225l-5.4 3.7-1.7-2.45Zm3.1 13.95.85 5.7q1.9.9 3.775 1.925T28.5 31.9v-4q-.35-.25-1.5-1.05t-2.5-1.75q-1.35-.95-2.6-1.8-1.25-.85-1.7-1.15ZM34 10.3q-1.5 0-2.575-1.075Q30.35 8.15 30.35 6.65q0-1.5 1.075-2.575Q32.5 3 34 3q1.5 0 2.575 1.075Q37.65 5.15 37.65 6.65q0 1.5-1.075 2.575Q35.5 10.3 34 10.3Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M37.05 46q-1.2 0-2.4-.2t-2.35-.55L4.05 34.95l.65-1.9 14.45 5.25 3.5-9.05-7.95-8.3q-1.15-1.3-.9-2.95.25-1.65 1.7-2.5l7.75-4.5q.7-.4 1.5-.425.8-.025 1.5.225t1.275.8q.575.55.825 1.3l.65 2.15q.85 2.7 2.475 4.35 1.625 1.65 3.975 2.45l1.05-3.2 1.9.55-1.95 6.05q-3.4-.7-5.95-2.7-2.55-2-3.9-5.4l-6.6 3.8 6.2 7.25-4.25 11.1 7.15 2.6 4.7-14.6q.5.15.95.275.45.125.9.225l-4.7 14.8 2.05.7q.95.35 1.95.525 1 .175 2.1.175 1.45 0 2.8-.275 1.35-.275 2.65-.925l1.5 1.5q-1.65.85-3.35 1.275-1.7.425-3.6.425ZM33.4 12.3q-1.5 0-2.575-1.075Q29.75 10.15 29.75 8.65q0-1.5 1.075-2.575Q31.9 5 33.4 5q1.5 0 2.575 1.075Q37.05 7.15 37.05 8.65q0 1.5-1.075 2.575Q34.9 12.3 33.4 12.3Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m17.6 47.7-2.5-1.5 6.4-10.9-4.1-2.45-3.75 6.05-2.5-1.5L22.6 18.85q-2.1-1.85-3.15-4.025-1.05-2.175-1.05-4.575 0-1.9.375-3.5t1.325-3.5l2.6 1.4q-.7 1.45-1 2.725-.3 1.275-.3 2.575 0 2.4 1.15 4.35 1.15 1.95 3.85 3.55l4.85 2.85q2.85 1.65 4.225 4.075Q36.85 27.2 36.85 30.35q0 1.95-.6 3.95t-1.6 3.8l-2.6-1.5q.85-1.6 1.325-3.125t.475-3.125q0-1.9-.65-3.475-.65-1.575-1.95-2.425Zm14.25-30.4q-1.5 0-2.575-1.075Q28.2 15.15 28.2 13.65q0-1.5 1.075-2.575Q30.35 10 31.85 10q1.5 0 2.575 1.075Q35.5 12.15 35.5 13.65q0 1.5-1.075 2.575Q33.35 17.3 31.85 17.3ZM27.15 8q-1.3 0-2.15-.85-.85-.85-.85-2.15 0-1.3.85-2.15.85-.85 2.15-.85 1.3 0 2.15.85.85.85.85 2.15 0 1.3-.85 2.15-.85.85-2.15.85Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m10.8 40-2.1-2.1 20.4-20.4H22v4h-3v-7h11.15q.7 0 1.35.25.65.25 1.15.75l6 5.95q1.45 1.45 3.35 2.2 1.9.75 4 .85v3q-2.6-.1-5-.975T36.8 23.8l-2.3-2.3-5.7 5.7 4.3 4.3-12.2 7.05-1.5-2.6 8.8-5.1-4.1-4.1ZM6 26v-3h10v3Zm-4-6.5v-3h10v3Zm37.5-4q-1.45 0-2.475-1.025Q36 13.45 36 12q0-1.45 1.025-2.475Q38.05 8.5 39.5 8.5q1.45 0 2.475 1.025Q43 10.55 43 12q0 1.45-1.025 2.475Q40.95 15.5 39.5 15.5ZM6 13v-3h10v3Z"/></svg>
-    </div>
+<div class="marqueefy" id="marqueefy-with-icon" tabindex="0">
+  <div class="content">
+    <i class="bi bi-emoji-smile-fill fs-1"></i>
+    <i class="bi bi-emoji-smile-upside-down-fill fs-1"></i>
+    <i class="bi bi-emoji-sunglasses-fill fs-1"></i>
+    <i class="bi bi-emoji-wink-fill fs-1"></i>
+    <i class="bi bi-emoji-kiss-fill fs-1"></i>
+    <i class="bi bi-emoji-heart-eyes-fill fs-1"></i>
+    <i class="bi bi-emoji-laughing-fill fs-1"></i>
+  </div>
 </div>
+##split##
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  document.fonts.ready.then(() => {
+    // Initiallize Marqueefy after fonts are ready
+    const marqueefyWithIcon = document.querySelector('#marqueefy-with-icon')
+    const marqueefyWithIconInstance = new marqueefy.Marqueefy(marqueefyWithIcon)
+  })
+});
+</script>
+
   {{< /example >}}
   
    #### Images
+   If the Marqueefy contains Images, please make sure they are loaded before initiallizing Marqueefy, 
+   because it uses its content's dimensions to determine the appropriate Speed.
+     
+   The following example initiallizes Marqueefy on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event">Window: load event</a>.
+   
   {{< example codeId="code3" class="d-flex justify-content-center align-items-center">}}
-<div class="marqueefy" tabindex="0">
+<div class="marqueefy" id="marqueefy-with-image" tabindex="0">
     <div class="content">
         <img src="/assets/images/pexels-nishant-aneja-2416482.jpg">
         <img src="/assets/images/pexels-pixabay-264337.jpg">
@@ -165,6 +188,14 @@ title: Marqueefy
         <img src="/assets/images/pexels-yan-krukov-6815665.jpg">
     </div>
 </div>
+##split##
+<script>
+// Initiallize Marqueefy on "Window: load event"
+window.addEventListener('load', () => {
+  const marqueefyWithImages = document.querySelector('#marqueefy-with-image')
+  const marqueefyWithImagesInstance = new marqueefy.Marqueefy(marqueefyWithImages)
+});
+</script>
   {{< /example >}}
   
   {{< squiggle >}}
@@ -332,6 +363,13 @@ title: Marqueefy
   {{< /example >}}
   
   #### Font
+  If the Marqueefy contains Web fonts or Icons, please make sure they are loaded and ready before initiallizing 
+  Marqueefy, because it uses its content's dimensions to determine the appropriate Speed.
+    
+  The following example uses <a href="https://fonts.google.com/">"Kaushan Script" from Google Fonts</a>. It makes use of the 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fonts">Document.fonts property</a> to ensure 
+  the fonts are ready before initiallizing Marqueefy.
+    
   {{< example codeId="code14" class="d-flex justify-content-center align-items-center">}}
 <style>
   #example4 {
@@ -345,6 +383,16 @@ title: Marqueefy
         Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
     </div>
 </div>
+##split##
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  document.fonts.ready.then(() => {
+    // Initiallize Marqueefy after fonts are ready
+    const marqueefyWithCustomFont = document.querySelector('#example4')
+    const marqueefyWithCustomFontInstance = new marqueefy.Marqueefy(marqueefyWithCustomFont)
+  })
+});
+</script>
   {{< /example >}}
 
 
