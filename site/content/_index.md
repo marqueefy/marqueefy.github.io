@@ -128,10 +128,82 @@ title: Marqueefy
   
   ## Options
   
+  ### Content Types
+  
+  ### Text
+  {{< example codeId="code1" class="d-flex justify-content-center align-items-center">}}
+<div class="marqueefy" tabindex="0">
+    <div class="content">
+        Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
+    </div>
+</div>
+  {{< /example >}}
+      
+  #### Icons
+  If the Marqueefy contains Web fonts or Icons, please make sure they are loaded and ready before initiallizing 
+  Marqueefy, because it uses its content's dimensions to determine the appropriate Speed.
+  
+  The following example uses <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>. It makes use of the 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fonts">Document.fonts property</a> to ensure 
+  the fonts are ready before initiallizing Marqueefy.
+  
+  {{< example codeId="code2" class="d-flex justify-content-center align-items-center">}}
+<div class="marqueefy" id="marqueefy-with-icon" tabindex="0">
+  <div class="content">
+    <i class="bi bi-emoji-smile-fill fs-1"></i>
+    <i class="bi bi-emoji-smile-upside-down-fill fs-1"></i>
+    <i class="bi bi-emoji-sunglasses-fill fs-1"></i>
+    <i class="bi bi-emoji-wink-fill fs-1"></i>
+    <i class="bi bi-emoji-kiss-fill fs-1"></i>
+    <i class="bi bi-emoji-heart-eyes-fill fs-1"></i>
+    <i class="bi bi-emoji-laughing-fill fs-1"></i>
+  </div>
+</div>
+##split##
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  document.fonts.ready.then(() => {
+    // Initiallize Marqueefy after fonts are ready
+    const marqueefyWithIcon = document.querySelector('#marqueefy-with-icon')
+    const marqueefyWithIconInstance = new marqueefy.Marqueefy(marqueefyWithIcon)
+  })
+});
+</script>
+
+  {{< /example >}}
+  
+   #### Images
+   If the Marqueefy contains Images, please make sure they are loaded before initiallizing Marqueefy, 
+   because it uses its content's dimensions to determine the appropriate Speed.
+     
+   The following example initiallizes Marqueefy on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event">Window: load event</a>.
+   
+  {{< example codeId="code3" class="d-flex justify-content-center align-items-center">}}
+<div class="marqueefy" id="marqueefy-with-image" tabindex="0">
+    <div class="content">
+        <img src="/assets/images/pexels-nishant-aneja-2416482.jpg">
+        <img src="/assets/images/pexels-pixabay-264337.jpg">
+        <img src="/assets/images/pexels-roman-davayposmotrim-35990.jpg">
+        <img src="/assets/images/pexels-the-th-179908.jpg">
+        <img src="/assets/images/pexels-yan-krukov-6815665.jpg">
+    </div>
+</div>
+##split##
+<script>
+// Initiallize Marqueefy on "Window: load event"
+window.addEventListener('load', () => {
+  const marqueefyWithImages = document.querySelector('#marqueefy-with-image')
+  const marqueefyWithImagesInstance = new marqueefy.Marqueefy(marqueefyWithImages)
+});
+</script>
+  {{< /example >}}
+  
+  {{< squiggle >}}
+  
   ### Variants
   
   #### Single item
-  {{< example codeId="code1" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code4" class="d-flex justify-content-center align-items-center">}}
 <div class="marqueefy" tabindex="0">
     <div class="content">
         Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
@@ -140,7 +212,7 @@ title: Marqueefy
   {{< /example >}}
   
   #### Multiple items
-  {{< example codeId="code2" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code5" class="d-flex justify-content-center align-items-center">}}
 <div class="marqueefy" tabindex="0">
     <div class="content">
         <span class="item">This is the first item</span>
@@ -158,7 +230,7 @@ title: Marqueefy
   If no value is specified, the default value is ```left```.
   
   #### Left (Default)
-  {{< example codeId="code3" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code6" class="d-flex justify-content-center align-items-center">}}
 <div class="marqueefy" tabindex="0">
     <div class="content">
         This text will scroll from right to left.
@@ -168,7 +240,7 @@ title: Marqueefy
   
   #### Right
   ```data-mq-direction="right"```
-  {{< example codeId="code4" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code7" class="d-flex justify-content-center align-items-center">}}
 <div class="marqueefy" data-mq-direction="right" tabindex="0">
     <div class="content">
         This text will scroll from left to right.
@@ -178,7 +250,7 @@ title: Marqueefy
   
   #### Top
   ```data-mq-direction="top"```
-  {{< example codeId="code5" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code8" class="d-flex justify-content-center align-items-center">}}
 <div class="marqueefy" data-mq-direction="top" style="height: 150px;" tabindex="0">
     <div class="content">
         This text will scroll from bottom to top.
@@ -188,7 +260,7 @@ title: Marqueefy
   
   #### Bottom
   ```data-mq-direction="bottom"```
-  {{< example codeId="code6" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code9" class="d-flex justify-content-center align-items-center">}}
 <div class="marqueefy" data-mq-direction="bottom" style="height: 150px;" tabindex="0">
     <div class="content">
         This text will scroll from top to bottom.
@@ -201,7 +273,7 @@ title: Marqueefy
   ### Speed
   Set the scrolling speed of the Marqueefy using the attribute: ```data-mq-speed```. Value must be a number. 
   Default speed is ```100```.
-  {{< example codeId="code7" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code10" class="d-flex justify-content-center align-items-center">}}
 <div class="marqueefy" data-mq-speed="50" tabindex="0">
     <div class="content">
         This text will scroll from right to left at a speed of 50.
@@ -241,7 +313,7 @@ title: Marqueefy
   
   Customize Marqueefy by changing <a id="specs-button" href="/#specs-css-custom-properties">CSS custom properties</a>
   #### Background color
-  {{< example codeId="code8" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code11" class="d-flex justify-content-center align-items-center">}}
 <style>
   #example1 {
     --mq-bg: #ffe69c; 
@@ -257,7 +329,7 @@ title: Marqueefy
   {{< /example >}}
   
   #### Border radius
-  {{< example codeId="code9" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code12" class="d-flex justify-content-center align-items-center">}}
 <style>
   #example2 {
     --mq-bg: #a6e9d5;
@@ -274,7 +346,7 @@ title: Marqueefy
   {{< /example >}}
   
   #### Border
-  {{< example codeId="code10" class="d-flex justify-content-center align-items-center">}}
+  {{< example codeId="code13" class="d-flex justify-content-center align-items-center">}}
 <style>
   #example3 {
     --mq-border-width: 4px; 
@@ -291,7 +363,14 @@ title: Marqueefy
   {{< /example >}}
   
   #### Font
-  {{< example codeId="code11" class="d-flex justify-content-center align-items-center">}}
+  If the Marqueefy contains Web fonts or Icons, please make sure they are loaded and ready before initiallizing 
+  Marqueefy, because it uses its content's dimensions to determine the appropriate Speed.
+    
+  The following example uses <a href="https://fonts.google.com/">"Kaushan Script" from Google Fonts</a>. It makes use of the 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fonts">Document.fonts property</a> to ensure 
+  the fonts are ready before initiallizing Marqueefy.
+    
+  {{< example codeId="code14" class="d-flex justify-content-center align-items-center">}}
 <style>
   #example4 {
     --mq-font-family: "Kaushan Script", cursive; 
@@ -304,6 +383,16 @@ title: Marqueefy
         Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
     </div>
 </div>
+##split##
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  document.fonts.ready.then(() => {
+    // Initiallize Marqueefy after fonts are ready
+    const marqueefyWithCustomFont = document.querySelector('#example4')
+    const marqueefyWithCustomFontInstance = new marqueefy.Marqueefy(marqueefyWithCustomFont)
+  })
+});
+</script>
   {{< /example >}}
 
 

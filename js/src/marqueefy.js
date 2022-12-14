@@ -25,8 +25,8 @@ class Marqueefy extends BaseComponent {
 
     this._element = element
     this._config = this._getConfig(config)
-    this.refresh()
     this._setListeners()
+    this.refresh()
   }
 
   static get NAME() {
