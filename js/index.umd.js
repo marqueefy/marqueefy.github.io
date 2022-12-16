@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Marqueefy (v1.0.2): index.umd.js
+ * Marqueefy (v1.0.3): index.umd.js
  * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */

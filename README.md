@@ -10,6 +10,8 @@
   Marqueefy is a custom Marquee component used to create horizontal or vertical scrolling content.
 </p>
 
+[![](https://data.jsdelivr.com/v1/package/npm/@marqueefy/marqueefy/badge)](https://www.jsdelivr.com/package/npm/@marqueefy/marqueefy)
+
 ## Table of contents
 
 - [Installation](#installation)

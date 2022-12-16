@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Marqueefy (v1.0.2): marqueefy.js
+ * Marqueefy (v1.0.3): marqueefy.js
  * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -25,6 +25,7 @@ class Marqueefy extends BaseComponent {
 
     this._element = element
     this._config = this._getConfig(config)
+    this._setListeners()
     this.refresh()
   }
 
@@ -56,6 +57,12 @@ class Marqueefy extends BaseComponent {
     }
 
     this._element.style.setProperty('--mq-animation-duration', (distance / speed) + 's')
+  }
+
+  _setListeners() {
+    window.addEventListener('resize', () => this.refresh(), {
+      passive: true
+    })
   }
 }
 

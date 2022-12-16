@@ -53,7 +53,11 @@
 
       case 'options-tab': {
         document.querySelector('#contents .nav').innerHTML =
-        `<li class="nav-item mb-2">Variants</li>
+        `<li class="nav-item my-2">Content types</li>
+         <li class="nav-item"><a class="nav-link" href="#options-text">Text</a></li>
+         <li class="nav-item"><a class="nav-link" href="#options-icons">Icons</a></li>
+         <li class="nav-item"><a class="nav-link" href="#options-images">Images</a></li>
+         <li class="nav-item mb-2">Variants</li>
          <li class="nav-item"><a class="nav-link" href="#options-single-item">Single Item</a></li>
          <li class="nav-item"><a class="nav-link" href="#options-multiple-items">Multiple Items</a></li>
          <li class="nav-item my-2">Directions</li>

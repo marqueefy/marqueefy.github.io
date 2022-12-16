@@ -10,19 +10,19 @@
     },
     {
       "path": "./dist/js/marqueefy.esm.js",
-      "maxSize": "2.35 kB"
+      "maxSize": "2.38 kB"
     },
     {
       "path": "./dist/js/marqueefy.esm.min.js",
-      "maxSize": "1.7 kB"
+      "maxSize": "1.72 kB"
     },
     {
       "path": "./dist/js/marqueefy.js",
-      "maxSize": "2.5 kB"
+      "maxSize": "2.55 kB"
     },
     {
       "path": "./dist/js/marqueefy.min.js",
-      "maxSize": "1.7 kB"
+      "maxSize": "1.75 kB"
     }
   ],
   "ci": {
