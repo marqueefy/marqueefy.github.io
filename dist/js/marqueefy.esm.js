@@ -1,5 +1,5 @@
 /*!
-  * Marqueefy v1.0.2 (https://marqueefy.github.io/)
+  * Marqueefy v1.0.3 (https://marqueefy.github.io/)
   * Copyright 2022 Neeraj Kumar Das (https://github.com/nkdas91)
   * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/master/LICENSE)  
   */
@@ -202,7 +202,7 @@ class Config {
  * Constants
  */
 
-const VERSION = '1.0.2';
+const VERSION = '1.0.3';
 
 /**
  * Class definition
@@ -251,7 +251,7 @@ class BaseComponent extends Config {
 
 /**
  * --------------------------------------------------------------------------
- * Marqueefy (v1.0.2): marqueefy.js
+ * Marqueefy (v1.0.3): marqueefy.js
  * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -269,6 +269,7 @@ class Marqueefy extends BaseComponent {
     super(element);
     this._element = element;
     this._config = this._getConfig(config);
+    this._setListeners();
     this.refresh();
   }
   static get NAME() {
@@ -296,6 +297,11 @@ class Marqueefy extends BaseComponent {
       this._element.style.setProperty('--mq-height', distance + 'px');
     }
     this._element.style.setProperty('--mq-animation-duration', distance / speed + 's');
+  }
+  _setListeners() {
+    window.addEventListener('resize', () => this.refresh(), {
+      passive: true
+    });
   }
 }
 

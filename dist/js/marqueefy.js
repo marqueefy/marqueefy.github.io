@@ -1,5 +1,5 @@
 /*!
-  * Marqueefy v1.0.2 (https://marqueefy.github.io/)
+  * Marqueefy v1.0.3 (https://marqueefy.github.io/)
   * Copyright 2022 Neeraj Kumar Das (https://github.com/nkdas91)
   * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/master/LICENSE)  
   */
@@ -208,7 +208,7 @@
    * Constants
    */
 
-  const VERSION = '1.0.2';
+  const VERSION = '1.0.3';
 
   /**
    * Class definition
@@ -257,7 +257,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Marqueefy (v1.0.2): marqueefy.js
+   * Marqueefy (v1.0.3): marqueefy.js
    * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -275,6 +275,7 @@
       super(element);
       this._element = element;
       this._config = this._getConfig(config);
+      this._setListeners();
       this.refresh();
     }
     static get NAME() {
@@ -303,11 +304,16 @@
       }
       this._element.style.setProperty('--mq-animation-duration', distance / speed + 's');
     }
+    _setListeners() {
+      window.addEventListener('resize', () => this.refresh(), {
+        passive: true
+      });
+    }
   }
 
   /**
    * --------------------------------------------------------------------------
-   * Marqueefy (v1.0.2): index.umd.js
+   * Marqueefy (v1.0.3): index.umd.js
    * Licensed under MIT (https://github.com/marqueefy/marqueefy.github.io/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
